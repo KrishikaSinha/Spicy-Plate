@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login — Spicy Plate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ===== LOGIN PAGE EXTRA STYLE ===== */
+
+.login-section{
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(to right,#b30000,#3b0000);
+}
+
+.login-box{
+background:white;
+padding:40px;
+width:360px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+text-align:center;
+}
+
+.login-title{
+font-family:'Pacifico',cursive;
+font-size:32px;
+color:#b30000;
+margin-bottom:10px;
+}
+
+.login-sub{
+font-size:14px;
+color:#666;
+margin-bottom:25px;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+.login-box input:focus{
+outline:none;
+border-color:#b30000;
+}
+
+.login-btn{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#b30000;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.login-btn:hover{
+background:#ff1a1a;
+}
+
+.extra-links{
+margin-top:15px;
+font-size:14px;
+}
+
+.extra-links a{
+color:#b30000;
+text-decoration:none;
+}
+
+.extra-links a:hover{
+text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+
+<div class="logo-wrap">
+<img src="../../Images/spicy.logo.jpeg" class="logo-img" alt="Spicy Plate Logo">
+<div class="logo-text">Spicy Plate</div>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#categories">Menu</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+</nav>
+
+
+<!-- ===== LOGIN AREA ===== -->
+<section class="login-section">
+
+<div class="login-box">
+
+<div class="login-title">Welcome Back 🌶️</div>
+<div class="login-sub">Login to order your favorite food</div>
+
+<form action="index.html">
+
+<input type="email" placeholder="Enter Email" required>
+<input type="password" placeholder="Enter Password" required>
+
+<button type="submit" class="login-btn">Login</button>
+
+</form>
+
+<div class="extra-links">
+<p>New user? <a href="#">Create Account</a></p>
+<p><a href="#">Forgot Password?</a></p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+© 2026 Spicy Plate — Hot • Fresh • Fast Delivery
+</footer>
+
+</body>
+</html>

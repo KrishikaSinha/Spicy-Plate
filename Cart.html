@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart - Spicy Plate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #fff7f0; }
+
+        .navbar { display: flex; justify-content: space-between; padding: 15px 30px; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo-text { font-family: 'Pacifico'; font-size: 24px; color: #c0392b; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { text-decoration: none; color: #333; }
+
+        #cartBox { max-width: 600px; margin: 30px auto; padding: 20px; background: #fffcf7; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+        .cart-item { display: flex; justify-content: space-between; align-items: center; padding: 15px; border-bottom: 1px solid #eee; }
+
+        .qty-btn { background: #e67e22; color: white; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer; }
+
+        .remove-btn { background: none; border: none; cursor: pointer; font-size: 18px; }
+
+        .btn-confirm { background: #c0392b; color: white; border: none; padding: 12px 40px; border-radius: 30px; font-size: 16px; cursor: pointer; }
+
+        .center { text-align: center; }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo-text">Spicy Plate</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li>🛒 <span id="cart-count">0</span></li>
+    </ul>
+</nav>
+
+<h1 class="center">🛒 Your Selected Items</h1>
+
+<div id="cartBox"></div>
+
+<h2 id="total" class="center">Total: ₹0</h2>
+
+<div class="center">
+    <button class="btn-confirm" onclick="confirmOrder()">Confirm Order</button>
+</div>
+
+<script src="../../js/cart.js"></script>
+
+</body>
+</html>

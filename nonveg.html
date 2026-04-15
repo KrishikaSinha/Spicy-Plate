@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veg Menu</title>
+
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="top-actions">
+<a href="index.html" class="back-btn">⬅ Home</a>
+
+<a href="cart.html" class="cart-btn">
+🛒 Cart <span id="cart-count">0</span>
+</a>
+</div>
+
+<h1 class="h-primary center">Non Veg Menu</h1>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="../../Images/Irresistible Chicken Biryani Recipe_ A Flavorful Delight.jpeg" alt="Chicken Biryani">
+<h3>Chicken Biryani</h3>
+<p>₹220</p>
+<button onclick="addToCart('Chicken Biryani',220)">Add</button>
+</div>
+
+<div class="menu-card">
+<img src="../../Images/Restaurant Style Butter Chicken Masala (Murgh Makhani).jpeg" alt="Butter Chicken">
+<h3>Butter Chicken</h3>
+<p>₹240</p>
+<button onclick="addToCart('Butter Chicken',240)">Add</button>
+</div>
+
+<div class="menu-card">
+<img src="../../Images/Tandoori Chicken - Savory&SweetFood.jpeg" alt="Tandoori Chicken">
+<h3>Tandoori Chicken</h3>
+<p>₹260</p>
+<button onclick="addToCart('Tandoori Chicken',260)">Add</button>
+</div>
+
+<div class="menu-card">
+<img src="../../Images/Chicken Chettinad Curry.jpeg" alt="Chicken Curry">
+<h3>Chicken Curry</h3>
+<p>₹200</p>
+<button onclick="addToCart('Chicken Curry',200)">Add</button>
+</div>
+
+<div class="menu-card">
+<img src="../../Images/Kerala Fish Fry _ The Take It Easy Chef.jpeg" alt="Fish Fry">
+<h3>Fish Fry</h3>
+<p>₹210</p>
+<button onclick="addToCart('Fish Fry',210)">Add</button>
+</div>
+
+<div class="menu-card">
+<img src="../../Images/Kosha mangsho mutton.jpeg" alt="Mutton Curry">
+<h3>Mutton Curry</h3>
+<p>₹280</p>
+<button onclick="addToCart('Mutton Curry',280)">Add</button>
+</div>
+
+<div class="menu-card">
+<img src="../../Images/A Cozy Tale of Tandoori Chicken Tikka Skewers.jpeg" alt="Chicken Tikka">
+<h3>Chicken Tikka</h3>
+<p>₹230</p>
+<button onclick="addToCart('Chicken Tikka',230)">Add</button>
+</div>
+
+</div>
+
+
+    <script src="../../js/cart.js"></script>
+
+<script>
+if(typeof updateCartCount === "function"){
+updateCartCount();
+}
+</script>
+
+</body>
+</html>

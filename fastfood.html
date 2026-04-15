@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fast Food Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="top-actions">
+<a href="index.html" class="back-btn">⬅ Home</a>
+
+<a href="cart.html" class="cart-btn">
+🛒 Cart <span id="cart-count">0</span>
+</a>
+</div>
+
+    <h1 class="h-primary center">Fast Food Menu</h1>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <img src="../../Images/Hambúrguer De Queijo Delicioso E Irritadiço PNG , Hambúrguer, Comida, Comida Rápida PNG Imagem para download gratuito.jpeg"
+                alt="Veg Burger">
+            <h3>Veg Burger</h3>
+            <p>₹90</p>
+            <button onclick="addToCart('Veg Burger',90)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/A Buffalo Pizza on wooden plate isolated on a transparent background.jpeg" alt="Cheese Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>₹160</p>
+            <button onclick="addToCart('Cheese Pizza',160)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/Crispy french fries on a plate isolated in a white background _ Premium AI-generated image.jpeg" alt="French Fries">
+            <h3>French Fries</h3>
+            <p>₹80</p>
+            <button onclick="addToCart('French Fries',80)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/Veg Momos.jpeg" alt="Veg Momos">
+            <h3>Veg Momos</h3>
+            <p>₹120</p>
+            <button onclick="addToCart('Veg Momos',120)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/White Sauce Pasta (Bechamel Sauce Pasta).jpeg" alt="White Sauce Pasta">
+            <h3>White Sauce Pasta</h3>
+            <p>₹150</p>
+            <button onclick="addToCart('White Sauce Pasta',150)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/Chilli Potato.jpeg" alt="Chilli Potato">
+            <h3>Chilli Potato</h3>
+            <p>₹110</p>
+            <button onclick="addToCart('Chilli Potato',110)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/The sandwich is layered with toasted sourdough bread, crispy lettuce.jpeg" alt="Veg Sandwich">
+            <h3>Veg Sandwich</h3>
+            <p>₹70</p>
+            <button onclick="addToCart('Veg Sandwich',70)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/Easy Vegetable Spring Rolls.jpeg" alt="Spring Rolls">
+            <h3>Spring Rolls</h3>
+            <p>₹130</p>
+            <button onclick="addToCart('Spring Rolls',130)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/Garlic Bread.jpeg" alt="Garlic Bread">
+            <h3>Garlic Bread</h3>
+            <p>₹100</p>
+            <button onclick="addToCart('Garlic Bread',100)">Add</button>
+        </div>
+
+        <div class="menu-card">
+            <img src="../../Images/I'M Obsessed With These Golden Caramelized Onions!.jpeg" alt="Veg Hot Dog">
+            <h3>Veg Hot Dog</h3>
+            <p>₹95</p>
+            <button onclick="addToCart('Veg Hot Dog',95)">Add</button>
+        </div>
+
+    </div>
+
+
+    <script src="../../js/cart.js"></script>
+
+    <script>
+        updateCartCount();
+    </script>
+
+</body>
+
+</html>
